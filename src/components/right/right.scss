@@ -1,0 +1,165 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    overflow: hidden;
+    width: 100%;
+
+    // .level-1 {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+
+
+
+    //     .search-holder {
+    //         display: flex;
+    //         align-items: center;
+    //         width: 50%;
+
+
+    //         input {
+    //             border: 0px;
+    //             padding: 0px;
+    //             outline: none;
+    //             width: 80%;
+    //         }
+    //     }
+
+    //     .cart-and-name-holder {
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: flex-end;
+    //         justify-content: space-between;
+    //         text-align: center;
+    //         padding-right: 20px;
+
+
+    //         .cart-holder {
+    //             display: flex;
+    //             flex-direction: row;
+    //             text-align: center;
+    //             align-items: center;
+    //             padding-right: 20px;
+    //             padding-left: 10px;
+    //             padding-top: 5px;
+    //             padding-bottom: 5px;
+    //             height: 40px;
+
+    //             p {
+    //                 font-weight: bold;
+    //             }
+    //         }
+
+    //         .name-holder {
+    //             display: flex;
+    //             flex-direction: row;
+    //             text-align: center;
+    //             align-items: center;
+    //             padding-right: 20px;
+    //             padding-left: 10px;
+    //             padding-top: 5px;
+    //             padding-bottom: 5px;
+    //             height: 40px;
+
+    //             .ptitle {
+    //                 font-weight: bold;
+    //             }
+
+    //             .name {
+    //                 margin-left: 10px;
+    //                 //margin-right: 5px;
+    //             }
+    //         }
+    //     }
+
+    // }
+
+    // .level-2 {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     text-align: center;
+
+
+
+    //     .list-holder {
+
+    //         ul {
+    //             align-self: flex-end;
+    //             display: block;
+
+    //             li {
+    //                 display: inline-block;
+    //                 padding-right: 80px;
+
+    //                 .icon-and-item1 {
+    //                     display: flex;
+    //                     background-color: #BDC3C7;
+    //                     flex-direction: row;
+    //                     text-align: center;
+    //                     align-items: center;
+    //                     border-style: solid;
+    //                     border-color: #BDC3C7;
+    //                     border-radius: 15px;
+    //                     border-width: 1px;
+    //                     padding-right: 20px;
+    //                     padding-left: 10px;
+    //                     padding-top: 5px;
+    //                     padding-bottom: 5px;
+    //                     height: 40px;
+
+    //                     p {
+    //                         font-weight: bold;
+    //                     }
+    //                 }
+
+    //                 .icon-and-item {
+    //                     display: flex;
+    //                     flex-direction: row;
+    //                     text-align: center;
+    //                     align-items: center;
+    //                     border-style: solid;
+    //                     border-color: #BDC3C7;
+    //                     border-radius: 15px;
+    //                     border-width: 1px;
+    //                     padding-right: 20px;
+    //                     padding-left: 10px;
+    //                     padding-top: 5px;
+    //                     padding-bottom: 5px;
+    //                     height: 40px;
+
+
+    //                     p {
+    //                         font-weight: bold;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    .sub-left {
+
+        margin-bottom: 50px;
+
+        h2 {
+            padding-left: 20px;
+        }
+
+        .card-item-holder {
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            padding-bottom: 10px;
+
+        }
+
+        .card-item-holder::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+
+}

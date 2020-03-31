@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LeftSide from './components/left'
+import RightSide from './components/right';
+import './app.scss'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Women from './components/Screen/Women/women'
+import Men from './components/Screen/Men/men'
+import Navbar from './components/right/navbar/navbar'
+import Addnew from './components/Screen/addnew/addnew'
+import './components/right/right.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+
+        <div className='left-holder'>
+          <LeftSide />
+        </div>
+        <div className='right-holder'>
+          <Navbar/>
+          <Switch>
+            <Route path="/" component={RightSide} exact/>
+            <Route path="/women" component={Women} />
+            <Route path="/men" component={Men} />
+            <Route path="/add" component={Addnew} />
+          
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+//Inspirations from
+//https://dribbble.com/shots/9404340-Shop-Clothing-Web-Page/attachments/1429040?mode=media
+
+//https://dribbble.com/shots/9447445-Confirmation-and-Checkout/attachments/1472816?mode=media

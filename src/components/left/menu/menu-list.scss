@@ -1,0 +1,66 @@
+.parent{
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding:0px;
+        width: 200px;
+
+        li{
+            display: block;
+            margin-top: 20px;
+
+
+            .icon-and-item {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                height: 40px;
+
+                p {
+                    font-weight: bold;
+                }
+            }
+            .icon-and-item-active {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                height: 40px;
+                 border-left: 0px;
+                 background-color: #BDC3C7;
+                 border-width: 1px;
+                 border-radius: 10px;
+
+                 -ms-transform: scale(1.0);
+                 /* IE 9 */
+                 -webkit-transform: scale(1.0);
+                 /* Safari 3-8 */
+                 transition: all .5s ease-in-out;
+                 box-shadow: 5px 5px 5px 0px #888888;
+
+                 transform: scale(1.05)
+                
+
+                p {
+                    font-weight: bold;
+                }
+            }
+            :hover{
+                cursor: pointer;
+            }
+
+          
+        }
+    }
+    .title-holder{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

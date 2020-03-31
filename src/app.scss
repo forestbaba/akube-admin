@@ -1,0 +1,19 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+
+    .left-holder {
+        width: 20%;
+        padding-left: 70px;
+    }
+
+    .right-holder {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow: hidden;
+
+    }
+}

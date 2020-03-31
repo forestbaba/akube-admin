@@ -1,0 +1,27 @@
+.parent{
+ 
+    .titleholder{
+        // bottom: -100px;
+        padding-bottom: 50px;
+        padding-top: 20px;
+
+    }
+    h1{
+        padding-left: 38px
+    }
+
+      .icon-and-item {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+          padding-right: 20px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          height: 40px;
+
+          p {
+              font-weight: bold;
+          }
+      }
+}
