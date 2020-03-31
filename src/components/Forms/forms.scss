@@ -49,10 +49,20 @@
             margin-right: 15px;
             padding: 15px;
             border: 1px solid black;
-          
 
+
+            .active {
+                background-color: red;
+            }
+
+            .active1 {
+                background-color: blue;
+            }
         }
+
+
     }
+
     p {
         font-weight: bold;
     }

@@ -33,7 +33,7 @@ const RightSide = () => {
             {/* <Navbar/> */}
             <div>
                 <div className='sub-left'>
-                    <h2>Trending</h2>
+                    {/* <h2>Statistics</h2>
                     <div className='card-item-holder'>
                         {
                             item.map((item) => {
@@ -41,33 +41,11 @@ const RightSide = () => {
 
                             })
                         }
-                    </div>
+                    </div> */}
 
                 </div>
-                <div className='sub-left'>
-                    <h2>Top products</h2>
-                    <div className='card-item-holder'>
-                        {
-                            item.map((item) => {
-                                return <ProductCard />
-
-                            })
-                        }
-                    </div>
-
-                </div>
-                <div className='sub-left'>
-                    <h2>Top item</h2>
-                    <div className='card-item-holder'>
-                        {
-                            item.map((item) => {
-                                return <ProductCard />
-
-                            })
-                        }
-                    </div>
-
-                </div>
+               
+                
                 <div className='sub-right'>
 
                 </div>

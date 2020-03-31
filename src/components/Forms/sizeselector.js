@@ -33,11 +33,12 @@ const Sizeselector = ({title, size}) => {
                 {
                     items.map(item => {
                         return (<li
-                            onClick={() => handleClick(item.id)}
-
-                            className={
+                            onClick={() => handleClick(item.id)}>
+                            <div className={
                                 item.className +
-                                (item.uid === activelink ? " icon-and-item1" : ' icon-and-item')}>
+                                (item.id === activelink ? ' active' : ' active1')}>
+
+                            </div>
                             {item.abbr}
                         </li>)
                     })
