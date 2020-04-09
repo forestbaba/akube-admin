@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AddnewSvg, MenSvg, WomenSvg, SortSvg, FilterSvg, CartSvg, DownArrowSvg, SearchSvg } from '../../../components/icons/styledsvg'
+import { AddnewSvg, MenSvg,  SortSvg, FilterSvg,  DownArrowSvg, SearchSvg } from '../../../components/icons/styledsvg'
 import './navbar.scss'
 import { useHistory } from 'react-router'; 
 
@@ -7,7 +7,7 @@ const Navbar = () => {
     const history = useHistory();
     const [activelink, setactivelink] = useState(null)
 
-    const [categoryItem, setCategoryItem] = useState([
+    const [categoryItem] = useState([
         { uid: 1, name: "Add", icon: AddnewSvg, path:'add' },
         { uid: 2, name: "Men", icon: MenSvg, path: 'men'},
         { uid: 3, name: "Sort", icon: SortSvg },

@@ -1,0 +1,118 @@
+.editProductParent{
+
+    display:flex;
+    flex-direction:column;
+
+
+
+.container {
+  position: relative;
+  width: 30%;
+  max-width: 200px;
+  margin-left:30px;
+  
+        img {
+            width: 70%;
+            height: auto;
+        }
+        
+
+        .btn {
+            display:flex;
+            flex-direction:'row';
+            position: absolute;
+            // top: 50%;
+            left: 50%;
+            transform: translate(-16%, -50%);
+            //  transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #FFF;
+            color: white;
+            font-size: 16px;
+            padding: 6px 6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+
+            .eye:hover{
+                cursor:pointer
+            }
+        }
+        // .btn {
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     -ms-transform: translate(-50%, -50%);
+        //     background-color: #555;
+        //     color: white;
+        //     font-size: 16px;
+        //     padding: 6px 6px;
+        //     border: none;
+        //     cursor: pointer;
+        //     border-radius: 5px;
+        //     text-align: center;
+        // }
+
+        // .btn:hover {
+        //     // background-color: black;
+        // }
+}
+
+
+
+.image-containers-holer{
+    display:flex;
+    flex-direction:row;
+
+    .imageholder{
+    background-color:'red';
+        display: flex;
+        flex-direction:row;
+        padding:20px;
+
+        .container{
+            margin-top:-50px;
+        }
+       
+
+        img{
+            width:150px;
+             margin:20px;
+             min-height:150px;
+        }
+    }
+    }
+    hr{
+        border: 0.5px solid black;
+        width: 100%;
+        margin-left:33px;
+        margin-right:50px;
+    }
+    .formholder{
+        margin-left:50px;
+        margin-bottom:100px;
+
+    .savebutton{
+       padding: 10px 10px ;
+       width: 200px;
+       border-width: 0px;
+       border-radius: 5px;
+       color: white;
+       background-color: black;
+       margin-top: 15px;
+   }
+   .select-holder{
+        width: 300px;
+        margin: 20px 0px;
+
+       .prompt{
+            font-weight: bold;
+        }
+        
+    }
+    }
+
+   
+}

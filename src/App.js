@@ -7,7 +7,13 @@ import Women from './components/Screen/Women/women'
 import Men from './components/Screen/Men/men'
 import Navbar from './components/right/navbar/navbar'
 import Addnew from './components/Screen/addnew/addnew'
+import Newin from './components/Screen/newin/newin'
+import Shoes from './components/Screen/Shoes/shoes'
+import Clothing from './components/Screen/Clothing/clothing'
+import Accessories from './components/Screen/Accessories/accessories'
+import Activewears from './components/Screen/Activewears/activewears'
 import './components/right/right.scss'
+import EditProduct from './components/Screen/EditProduct'
 
 function App() {
   return (
@@ -24,6 +30,12 @@ function App() {
             <Route path="/women" component={Women} />
             <Route path="/men" component={Men} />
             <Route path="/add" component={Addnew} />
+            <Route path="/newin" component={Newin} />
+            <Route path="/shoes" component={Shoes} />
+            <Route path="/clothing" component={Clothing} />
+            <Route path="/activewears" component={Activewears} />
+            <Route path="/accessories" component={Accessories} />
+            <Route path="/editProduct" component={EditProduct} />
           
           </Switch>
         </div>

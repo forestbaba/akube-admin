@@ -1,0 +1,121 @@
+// @import '../variable';
+
+.main_content {
+    form.form-component {
+        input#searchInput {
+            box-shadow: 0px 3px 6px #00000029;
+            width: 15rem;
+            position: static;
+            margin: 15px 0;
+        }
+
+        .header__btn {
+            right: 15.5rem;
+            top: 20px;
+        }
+    }
+
+    .product-btn {
+        display: flex;
+        justify-content: space-evenly;
+
+        button {
+            padding: 5px 0;
+            border: none;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 5px;
+            font-size: 12px;
+            width: 60px;
+            color: #BDC3C7;
+            background-color: #ffffff;
+        }
+
+        button:focus {
+            background: #444BF7;
+            color: #ffffff;
+        }
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        
+        .left-side {
+            width: 92%;
+            margin-left: 4%;
+        }
+    }
+
+
+}
+
+.product-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 20px #72727229;
+
+    margin: 20px 10px;
+    padding: 10px;
+
+    h5 {
+        width: 300px;
+    }
+
+    .item-image {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+    .button-holder {
+        width: 300px;
+
+
+
+        .delete-button {
+            border-width: 0px;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 100px;
+            margin-right: 20px;
+            color: white;
+            // background-color: $droppx-light-red;
+        }
+
+        .edit-button {
+            border-width: 0px;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 50px;
+            margin-right: 20px;
+            color: white;
+            // background-color: $dark-gray;
+        }
+
+    }
+
+}
+
+@media(min-width: 768px) {
+    .main_content {
+        .product-btn {
+            button {
+                width: 9rem;
+            }
+        }
+
+        form.form-component {
+            input#searchInput {
+                width: 22rem;
+            }
+
+            .header__btn {
+                right: 17.5rem;
+            }
+        }
+    }
+}

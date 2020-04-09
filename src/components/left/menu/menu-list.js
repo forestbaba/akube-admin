@@ -8,19 +8,20 @@ const Menulist = () => {
 
     
 
-    const [categoryItem, setCategoryItem] = useState([
+    const [categoryItem] = useState([
         { uid: 1, name: "New in", icon: NewSvg, path: "newin" },
         { uid: 2, name: "Clothing", icon: HangerSvg, path: 'clothing' },
         { uid: 3, name: "Shoes", icon: SportSvg, path: 'shoes' },
         { uid: 4, name: "Accessories", icon: ClothingSvg, path: 'accessories' },
-        { uid: 5, name: "Activewear", icon: TrackSvg, path: 'activewear' }
+        { uid: 5, name: "Activewear", icon: TrackSvg, path: 'activewears' }
     ])
     const [activelink, setactivelink] = useState(null)
 const history = useHistory()
 
     const handleClick = id => {
         setactivelink(id)
-        history.push(`/${categoryItem[id - 1].path}`)
+        history.push(`/${categoryItem[id - 1].path}`,  {id:categoryItem[id - 1].path})
+        // history.push(`/editProduct`,{id})
     }
     return (
         <div className='parent'>

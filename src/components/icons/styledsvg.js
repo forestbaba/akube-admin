@@ -22,6 +22,10 @@ import { ReactComponent as Track } from './track.svg'
 import { ReactComponent as Heartoutlined } from './heart-outline.svg'
 import { ReactComponent as Heartfilled } from './heart-filled.svg'
 import { ReactComponent as Addnew } from './add.svg'
+import { ReactComponent as Edit } from './edit.svg'
+import { ReactComponent as Eye } from './eye.svg'
+import { ReactComponent as Delete } from './trash.svg'
+import { ReactComponent as Upload } from './upload.svg'
 
 export const StyledSVG = styled(Bed)`
  height: 1rem;
@@ -278,5 +282,50 @@ export const AddnewSvg = styled(Addnew)`
  margin-left:20px;
  margin-right:20px;
 
+//  margin: auto;
+`
+export const EditSvg = styled(Edit)`
+ height: 1.2rem;
+ width: 1.5rem;
+ display: block;
+ .lines{
+ }
+ margin-left:20px;
+ margin-right:20px;
+
+//  margin: auto;
+`
+export const UploadSvg = styled(Upload)`
+ height: 1.2rem;
+ width: 1.5rem;
+ display: block;
+ .lines{
+ }
+ margin-left:20px;
+ margin-right:20px;
+
+//  margin: auto;
+`
+export const DeleteSvg = styled(Delete)`
+ height: 1.2rem;
+ width: 1.5rem;
+ display: block;
+ .lines{
+ }
+ margin-left:20px;
+ margin-right:20px;
+
+//  margin: auto;
+`
+
+export const EyeSvg = styled(Eye)`
+ height: 2rem;
+ width: 1.5rem;
+ display: block;
+ .lines{
+ }
+ margin-left:20px;
+ margin-right:20px;
+ margin-top:-4px;
 //  margin: auto;
 `

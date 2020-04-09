@@ -16,4 +16,33 @@
         overflow: hidden;
 
     }
+.page-title{
+    font-weight: bold;
+    font-size:22px
+}
+
+.notification-dialog{
+    border-radius: 5px;
+    background: #e5e0e0 ;
+    padding:10px;
+    margin-bottom:20px;
+    margin-left:40px;
+    margin-right:40px;
+    border: 1px solid black;
+    z-index:1;
+
+    .n-title{
+        font-weight:bold;
+    }
+   
+}
+ .danger{
+        background: #f4b0b0;
+    }
+ .success{
+        background: #a7f9c2;
+    }
+}
+.bolded{
+    font-weight:'bold'
 }

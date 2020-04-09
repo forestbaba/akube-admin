@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-
-const Sizeselector = ({title, size}) => {
+import Form from './textform'
+const Sizeselector = ({ title, selectorItem, handleClickSize, activelink}) => {
 
     const [items, setItems] = useState([
         { id: '1', name: 'Extra Small', abbr: 'XS' },
@@ -11,35 +11,29 @@ const Sizeselector = ({title, size}) => {
         { id: '6', name: 'Extra extra Large', abbr: 'XXL' },
         { id: '7', name: 'Extra extra extra Large', abbr: 'XXXL' }
     ])
-    const [activelink, setActiveLink] = useState(null)
+    const [namevalue, setnamevalue] = useState('')
 
-    const handleClick = id => {
-        console.log('Clickey')
-        setActiveLink(id)
-
-        items.map(item => {
-            if (item.id.toString() === id.toString()) {
-                size = items[id -1].abbr;
-                console.log('The size: ',size)
-            }
-        })
-        
-    }
+   
     return (
         <div className='size-selector-parent'>
             <p>{title}</p>
 
             <ul>
                 {
-                    items.map(item => {
+
+                    selectorItem.map(item => {
                         return (<li
-                            onClick={() => handleClick(item.id)}>
+                            // onChange={handleChange}
+                            // onClick={() => handleClickSize(item.id)}>
+                            onClick={handleClickSize(item.id)}>
                             <div className={
                                 item.className +
-                                (item.id === activelink ? ' active' : ' active1')}>
+                                (item.id === activelink ? ' active' : ' active1')}
+                                >
 
                             </div>
                             {item.abbr}
+                            {/* <input placeholder="L" name="size" value={namevalue} onChange={handleClick.bind(this)}/> */}
                         </li>)
                     })
 
